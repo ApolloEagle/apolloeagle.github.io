@@ -167,6 +167,10 @@ img {
 .masthead {
   padding: 10px 0;
   border-bottom: 1px solid $lightGray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 
   @include mobile {
     text-align: center;
@@ -215,9 +219,8 @@ img {
 
 nav {
   float: right;
-  margin-top: 23px; // @TODO: Vertically middle align
   font-family: 'proxima-nova-soft', sans-serif;
-  font-size: 18px;
+  font-size: 0.9rem;
 
   @include mobile {
     float: none;
