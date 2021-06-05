@@ -167,7 +167,7 @@ img {
 }
 
 .masthead {
-  padding: 20px 0;
+  padding: 10px 0;
   border-bottom: 1px solid $lightGray;
 
   @include mobile {
@@ -180,6 +180,7 @@ img {
   width: 2.5rem;
   height: 2.5rem;
   margin-right: 15px;
+  padding-top: 3px;
 
   @include mobile {
     float: none;
@@ -208,7 +209,7 @@ img {
   cursor: pointer;
   font-family: 'proxima-nova-soft', sans-serif;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 1.1rem;
   letter-spacing: 1px;
 }
 
