@@ -24,8 +24,6 @@ body {
 }
 
 .container {
-  margin: 0 auto;
-  padding: 0 10px;
   width: 100%;
 }
 
@@ -180,7 +178,6 @@ img {
   width: 2.5rem;
   height: 2.5rem;
   margin-right: 15px;
-  padding-top: 3px;
 
   @include mobile {
     float: none;
