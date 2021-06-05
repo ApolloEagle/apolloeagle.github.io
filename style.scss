@@ -243,6 +243,18 @@ nav {
   }
 }
 
+.sidebar {
+  width: 240px;
+  padding: 0.2rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-height: 100%;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  border-right: 1px solid #e7e9ed;
+}
+
 //
 // .main
 //
