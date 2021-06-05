@@ -276,6 +276,7 @@ nav {
 .posts > .post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
+  padding: 33px 10px 10px 0px;
 }
 
 .post {
@@ -286,6 +287,7 @@ nav {
     color: $gray;
     font-size: 22px;
     font-style: italic;
+    padding: 33px 10px 10px 0px;
   }
 
   .comments {
