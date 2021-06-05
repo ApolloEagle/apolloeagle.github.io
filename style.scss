@@ -166,11 +166,15 @@ img {
 
 .masthead {
   padding: 10px 0;
-  border-bottom: 1px solid $lightGray;
+  border-bottom: 1px solid #eee;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
 
   @include mobile {
     text-align: center;
