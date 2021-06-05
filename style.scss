@@ -192,6 +192,9 @@ img {
 
 .site-info {
   float: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 
   @include mobile {
     float: none;
