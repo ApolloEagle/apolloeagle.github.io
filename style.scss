@@ -68,6 +68,7 @@ h4 {
 p {
   line-height: 1.7;
   font-size: 16px;
+  margin-top: 15px;
 }
 
 a {
@@ -269,6 +270,7 @@ nav {
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
+  padding: 33px 10px 10px 0px;
 }
 
 .posts > .post:last-child {
