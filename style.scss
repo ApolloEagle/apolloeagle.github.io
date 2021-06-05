@@ -246,11 +246,12 @@ nav {
 .sidenav {
   height: 100%;
   width: 160px;
+  margin-top: 61px;
   position: fixed;
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  border-right: 1px solid #eee;
   overflow-x: hidden;
   padding-top: 20px;
 }
