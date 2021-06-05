@@ -245,7 +245,7 @@ nav {
 
 .sidenav {
   height: 100%;
-  width: 160px;
+  width: 240px;
   margin-top: 61px;
   position: fixed;
   z-index: 1;
@@ -257,7 +257,7 @@ nav {
 }
 
 .main {
-  margin-left: 160px; /* Same as the width of the sidenav */
+  margin-left: 240px; /* Same as the width of the sidenav */
   font-size: 28px; /* Increased text to enable scrolling */
   padding: 0px 10px;
 }
