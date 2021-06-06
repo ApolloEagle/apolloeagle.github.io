@@ -166,12 +166,8 @@ img {
 }
 
 .masthead {
-  padding: 10px 0;
+  padding: 10px 15px;
   border-bottom: 1px solid #eee;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   position: fixed;
   top: 0;
   width: 100%;
@@ -226,6 +222,7 @@ nav {
   float: right;
   font-family: 'proxima-nova-soft', sans-serif;
   font-size: 0.9rem;
+  padding-top: 10px;
 
   @include mobile {
     float: none;
@@ -287,7 +284,6 @@ nav {
     color: $gray;
     font-size: 22px;
     font-style: italic;
-    padding: 33px 10px 10px 0px;
   }
 
   .comments {
