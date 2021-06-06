@@ -238,6 +238,10 @@ nav {
   overflow-x: hidden;
   padding-top: 20px;
   padding-left: 5px;
+
+  @include mobile {
+    width: 0;
+  }
 }
 
 .main {
