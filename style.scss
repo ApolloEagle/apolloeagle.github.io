@@ -240,7 +240,7 @@ nav {
   padding-left: 5px;
 
   @include mobile {
-    width: 0;
+    display: none;
   }
 }
 
