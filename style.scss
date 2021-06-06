@@ -184,12 +184,6 @@ img {
   height: 2.5rem;
   margin-right: 15px;
 
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
-
   img {
     border-radius: 5px;
   }
@@ -256,6 +250,7 @@ nav {
   border-right: 1px solid #eee;
   overflow-x: hidden;
   padding-top: 20px;
+  padding-left: 5px;
 }
 
 .main {
