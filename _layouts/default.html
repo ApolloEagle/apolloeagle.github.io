@@ -44,19 +44,11 @@
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
+            <a href="{{ site.baseurl }}/blog">Blog</a>
             <a href="{{ site.baseurl }}/about">About</a>
           </nav>
         </header>
       </div>
-    </div>
-
-    <div class="sidenav">
-      <ul>
-        {% for post in site.posts %}
-        <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-        {% endfor %}
-      </ul>
     </div>
 
     <div id="main" role="main" class="main">{{ content }}</div>
