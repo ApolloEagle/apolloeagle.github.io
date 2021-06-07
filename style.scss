@@ -268,11 +268,11 @@ nav {
 }
 
 .excerpt {
-  height: 0;
+  display: none;
 }
 
 .excerpt:hover {
-  height: 200px;
+  display: contents;
 }
 
 .wrapper-footer {
