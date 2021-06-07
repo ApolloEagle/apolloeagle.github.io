@@ -7,6 +7,10 @@ layout: default
   <article class="post">
     <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
+    <h1>{{site.posts.length}}</h1>
+    <h1>{{site.posts[0]}}</h1>
+    <h1>{{site.posts[site.posts.length - 1]}}</h1>
+
     <div class="entry">{{ post.content }}</div>
   </article>
   {% endfor %}
