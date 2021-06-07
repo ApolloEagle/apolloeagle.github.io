@@ -267,6 +267,14 @@ nav {
   }
 }
 
+.excerpt {
+  height: 0;
+}
+
+.excerpt:hover {
+  height: 200px;
+}
+
 .wrapper-footer {
   margin-top: 50px;
   border-top: 1px solid #ddd;
