@@ -2,15 +2,4 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts[0] %}
-  <article class="post">
-    <!-- <h1>
-      <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-    </h1>
-
-    <div class="entry">{{ post.content }}</div> -->
-    <h1>{{ post.date }}</h1>
-  </article>
-  {% endfor %}
-</div>
+<div class="posts">{% include 2021-06-05-First-Post.md %}</div>
