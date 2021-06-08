@@ -9,7 +9,7 @@ layout: default
         >{{ site.posts[0].title }}</a
       >
     </h1>
-    <div class="post-date">{{ post.date | date: "%B %e, %Y" }}</div>
+    <div class="post-date">{{ site.posts[0].date | date: "%B %e, %Y" }}</div>
 
     <div class="entry">{{ site.posts[0].content }}</div>
   </article>
