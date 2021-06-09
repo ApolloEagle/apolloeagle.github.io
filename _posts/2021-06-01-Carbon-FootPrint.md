@@ -1,10 +1,10 @@
 ---
 layout: post
-title: First Post
+title: Carbon Footprint
 ---
 
 This will be our first chart:
 
-{% include carbon-footprint.html %}
+{% include donut.html %}
 
 This will be our analysis.
