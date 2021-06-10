@@ -5,8 +5,8 @@
 // IMPORTS
 //
 
-@import "reset";
-@import "variables";
+@import 'reset';
+@import 'variables';
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -33,7 +33,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "proxima-nova-soft", sans-serif;
+  font-family: 'proxima-nova-soft', sans-serif;
   color: $darkerGray;
   font-weight: bold;
 
@@ -137,6 +137,11 @@ img {
   font-weight: 300;
 }
 
+.post-image {
+  height: 10rem;
+  width: 10rem;
+}
+
 // Specify the color of the selection
 ::-moz-selection {
   color: $black;
@@ -151,7 +156,7 @@ img {
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
 .clearfix:after {
-  content: " ";
+  content: ' ';
   display: table;
 }
 
@@ -206,7 +211,7 @@ img {
   margin: 0;
   color: $darkGray;
   cursor: pointer;
-  font-family: "proxima-nova-soft", sans-serif;
+  font-family: 'proxima-nova-soft', sans-serif;
   font-weight: 300;
   font-size: 1.1rem;
   letter-spacing: 1px;
@@ -214,7 +219,7 @@ img {
 
 nav {
   float: right;
-  font-family: "proxima-nova-soft", sans-serif;
+  font-family: 'proxima-nova-soft', sans-serif;
   font-size: 0.9rem;
   padding-top: 10px;
 
@@ -287,5 +292,5 @@ footer {
 
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
-@import "highlights";
-@import "svg-icons";
+@import 'highlights';
+@import 'svg-icons';
