@@ -12,6 +12,7 @@ permalink: /blog/
         <li>
           <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
           <div class="post-date">{{ post.date | date: "%B %e, %Y" }}</div>
+          {% include donut.html %}
         </li>
       </h2>
     </article>
