@@ -6,12 +6,12 @@ permalink: /test/
 
 <div class="posts">
   <ul>
-  {% for post in site.posts %}
-    <article class="post">
+  {% for draft in site.drafts %}
+    <article class="draft">
       <h2>
         <li>
-          <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-          <div class="post-date">{{ post.date | date: "%B %e, %Y" }}</div>
+          <a href="{{ site.baseurl }}{{ draft.url }}">{{ draft.title }}</a>
+          <div class="post-date">{{ draft.date | date: "%B %e, %Y" }}</div>
         </li>
       </h2>
     </article>
