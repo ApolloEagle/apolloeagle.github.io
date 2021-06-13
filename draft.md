@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Test
-permalink: /test/
+title: Draft
+permalink: /draft/
 ---
 
 <div class="posts">
