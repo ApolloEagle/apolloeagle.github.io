@@ -30,9 +30,17 @@
   const config = {
     type: "doughnut",
     data: data,
-    title: {
-      display: true,
-      text: "2021 US Open Course Statistics",
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          position: "top",
+        },
+        title: {
+          display: true,
+          text: "2021 US Open Course Statistics",
+        },
+      },
     },
   };
 
