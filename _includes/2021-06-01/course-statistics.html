@@ -1,12 +1,40 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
+<style>
+  .chart-actions {
+    margin: 16px 0;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .chart-button {
+    transition: background 0.25s, border-color 0.25s;
+    background: rgba(40, 44, 52, 0.05);
+    border: 1px solid transparent;
+    border-radius: 6px;
+    color: #3080d0;
+    text-decoration: none !important;
+    display: inline-block;
+    font-size: 0.8rem;
+    padding: 8px 16px;
+    margin: 0 8px 8px 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    font-weight: 500;
+  }
+</style>
+
 <div>
   <canvas id="myChart"></canvas>
-  <a class="chart-button">Round 1</a>
-  <a>Round 2</a>
-  <a>Round 3</a>
-  <a>Round 4</a>
-  <a>Overall</a>
+  <div class="chart-actions">
+    <a class="chart-button">Round 1</a>
+    <a class="chart-button">Round 2</a>
+    <a class="chart-button">Round 3</a>
+    <a class="chart-button">Round 4</a>
+    <a class="chart-button">Overall</a>
+  </div>
 </div>
 
 <script>
