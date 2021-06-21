@@ -1,0 +1,36 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<div>
+  <canvas id="myChart"></canvas>
+</div>
+
+<script>
+  const DATA_COUNT = 5;
+  const NUMBER_CFG = { count: DATA_COUNT, min: 0, max: 100 };
+
+  const data = {
+    labels: ["Eagles", "Birdies", "Pars", "Bogeys", "Double Bogeys", "Other"],
+    datasets: [
+      {
+        label: "Round 1 Course Statistics",
+        data: [7, 335, 1762, 640, 59, 5],
+        backgroundColor: [
+          "rgb(255, 99, 132)",
+          "rgb(54, 162, 235)",
+          "rgb(255, 205, 86)",
+          "rgb(74, 192, 192)",
+          "rgb(167, 123, 255)",
+          "rgb(204, 205, 209)",
+        ],
+        hoverOffset: 4,
+      },
+    ],
+  };
+
+  const config = {
+    type: "doughnut",
+    data: data,
+  };
+
+  var myChart = new Chart(document.getElementById("myChart"), config);
+</script>
