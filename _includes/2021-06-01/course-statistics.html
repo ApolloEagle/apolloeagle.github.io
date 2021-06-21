@@ -4,6 +4,7 @@
   .chart-actions {
     margin: 16px 0;
     align-items: center;
+    justify-content: center;
     display: flex;
     flex-wrap: wrap;
   }
@@ -29,11 +30,11 @@
 <div>
   <canvas id="myChart"></canvas>
   <div class="chart-actions">
-    <a class="chart-button">Round 1</a>
-    <a class="chart-button">Round 2</a>
-    <a class="chart-button">Round 3</a>
-    <a class="chart-button">Round 4</a>
-    <a class="chart-button">Overall</a>
+    <a id="0" class="chart-button" onclick="updateDate(this)">Round 1</a>
+    <a id="1" class="chart-button" onclick="updateDate(this)">Round 2</a>
+    <a id="2" class="chart-button" onclick="updateDate(this)">Round 3</a>
+    <a id="3" class="chart-button" onclick="updateDate(this)">Round 4</a>
+    <a id="4" class="chart-button" onclick="updateDate(this)">Overall</a>
   </div>
 </div>
 
@@ -41,12 +42,18 @@
   const DATA_COUNT = 5;
   const NUMBER_CFG = { count: DATA_COUNT, min: 0, max: 100 };
 
+  const round1 = [7, 335, 1762, 640, 59, 5];
+  const round2 = [8, 376, 1678, 642, 77, 9];
+  const round3 = [4, 189, 812, 250, 22, 1];
+  const round4 = [2, 177, 797, 273, 26, 3];
+  const overall = [21, 1077, 5049, 1805, 184, 18];
+
   const data = {
     labels: ["Eagles", "Birdies", "Pars", "Bogeys", "Double Bogeys", "Other"],
     datasets: [
       {
         label: "2021 US Open Course Statistics",
-        data: [7, 335, 1762, 640, 59, 5],
+        data: round1,
         backgroundColor: [
           "rgb(54, 162, 235)",
           "rgb(255, 99, 132)",
@@ -78,4 +85,8 @@
   };
 
   var myChart = new Chart(document.getElementById("myChart"), config);
+
+  function updateData(elem) {
+    console.log(elem.id);
+  }
 </script>
