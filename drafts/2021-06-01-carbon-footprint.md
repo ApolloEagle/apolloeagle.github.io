@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Carbon Emissions by
+title: 2021 US Open
 ---
 
 Carbon Emissions contributed by
 
-{% include 2021-06-01/carbon-footprint-donut.html %}
+{% include 2021-06-01/course-statistics.html %}
 
 This will be our analysis.
