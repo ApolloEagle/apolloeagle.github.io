@@ -9,15 +9,18 @@
   const NUMBER_CFG = { count: DATA_COUNT, min: 0, max: 100 };
 
   const data = {
-    labels: ['Red', 'Blue', 'Yellow'],
+    labels: ["Eagles", "Birdies", "Pars", "Bogeys", "Double Bogeys", "Other"],
     datasets: [
       {
-        label: 'My First Dataset',
-        data: [300, 50, 100],
+        label: "Round 1 Course Statistics",
+        data: [7, 335, 1762, 640, 59, 5],
         backgroundColor: [
-          'rgb(255, 99, 132)',
-          'rgb(54, 162, 235)',
-          'rgb(255, 205, 86)',
+          "rgb(255, 99, 132)",
+          "rgb(54, 162, 235)",
+          "rgb(255, 205, 86)",
+          "rgb(170, 223, 222)",
+          "rgb(204, 179, 255)",
+          "rgb(160, 208, 245)",
         ],
         hoverOffset: 4,
       },
@@ -25,9 +28,9 @@
   };
 
   const config = {
-    type: 'doughnut',
+    type: "doughnut",
     data: data,
   };
 
-  var myChart = new Chart(document.getElementById('myChart'), config);
+  var myChart = new Chart(document.getElementById("myChart"), config);
 </script>
