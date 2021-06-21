@@ -90,9 +90,9 @@
     switch (elem.id) {
       case "0":
         var data = myChart.config.data;
-        console.log(data);
         console.log(data.datasets[0].data);
         data.datasets[0].data = round1;
+        console.log(data.datasets[0].data);
         myChart.update();
       case "1":
         var data = myChart.config.data;
