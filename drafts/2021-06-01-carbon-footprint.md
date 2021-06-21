@@ -1,10 +1,10 @@
 ---
 layout: post
-title: Carbon Footprint
+title: Carbon Emissions by
 ---
 
-This will be our first chart:
+Carbon Emissions contributed by
 
-{% include donut.html %}
+{% include 2021-06-01/carbon-footprint-donut.html %}
 
 This will be our analysis.
