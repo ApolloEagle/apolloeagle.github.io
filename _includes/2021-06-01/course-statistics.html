@@ -87,11 +87,11 @@
   var myChart = new Chart(document.getElementById("myChart"), config);
 
   function updateData(elem) {
-    console.log(typeof elem.id);
     switch (elem.id) {
       case "0":
-        console.log("HERE?");
         var data = myChart.config.data;
+        console.log(data);
+        console.log(data.datasets[0].data);
         data.datasets[0].data = round1;
         myChart.update();
       case "1":
