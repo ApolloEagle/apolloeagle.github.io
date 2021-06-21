@@ -89,6 +89,7 @@
   function updateData(elem) {
     switch (elem.id) {
       case 0:
+        console.log("HERE 1");
         var data = myChart.config.data;
         data.datasets[0].data = round1;
         myChart.update();
