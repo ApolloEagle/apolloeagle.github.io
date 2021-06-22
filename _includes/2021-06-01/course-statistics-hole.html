@@ -30,11 +30,21 @@
 <div>
   <canvas id="myChart"></canvas>
   <div class="chart-actions">
-    <a id="hole0" class="chart-button" onclick="updateChart(this)">Round 1</a>
-    <a id="hole1" class="chart-button" onclick="updateChart(this)">Round 2</a>
-    <a id="hole2" class="chart-button" onclick="updateChart(this)">Round 3</a>
-    <a id="hole3" class="chart-button" onclick="updateChart(this)">Round 4</a>
-    <a id="hole4" class="chart-button" onclick="updateChart(this)">Overall</a>
+    <a id="hole0" class="chart-button" onclick="updateHoleChart(this)"
+      >Round 1</a
+    >
+    <a id="hole1" class="chart-button" onclick="updateHoleChart(this)"
+      >Round 2</a
+    >
+    <a id="hole2" class="chart-button" onclick="updateHoleChart(this)"
+      >Round 3</a
+    >
+    <a id="hole3" class="chart-button" onclick="updateHoleChart(this)"
+      >Round 4</a
+    >
+    <a id="hole4" class="chart-button" onclick="updateHoleChart(this)"
+      >Overall</a
+    >
   </div>
 </div>
 
@@ -532,7 +542,7 @@
 
   var myChart = new Chart(document.getElementById('myChart'), config);
 
-  function updateChart(elem) {
+  function updateHoleChart(elem) {
     if (elem.id === 'hole0') {
       var data = myChart.config.data;
       data.datasets[0].data = round1Eagles;

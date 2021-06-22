@@ -30,11 +30,11 @@
 <div>
   <canvas id="scrChart"></canvas>
   <div class="chart-actions">
-    <a id="0" class="chart-button" onclick="updateChart(this)">Round 1</a>
-    <a id="1" class="chart-button" onclick="updateChart(this)">Round 2</a>
-    <a id="2" class="chart-button" onclick="updateChart(this)">Round 3</a>
-    <a id="3" class="chart-button" onclick="updateChart(this)">Round 4</a>
-    <a id="4" class="chart-button" onclick="updateChart(this)">Overall</a>
+    <a id="0" class="chart-button" onclick="updateRoundChart(this)">Round 1</a>
+    <a id="1" class="chart-button" onclick="updateRoundChart(this)">Round 2</a>
+    <a id="2" class="chart-button" onclick="updateRoundChart(this)">Round 3</a>
+    <a id="3" class="chart-button" onclick="updateRoundChart(this)">Round 4</a>
+    <a id="4" class="chart-button" onclick="updateRoundChart(this)">Overall</a>
   </div>
 </div>
 
@@ -83,7 +83,8 @@
 
   var scrChart = new Chart(document.getElementById('scrChart'), csrConfig);
 
-  function updateChart(elem) {
+  function updateRoundChart(elem) {
+    console.log();
     if (elem.id === '0') {
       console.log('HERE');
       var csrData = scrChart.csrConfig.data;
