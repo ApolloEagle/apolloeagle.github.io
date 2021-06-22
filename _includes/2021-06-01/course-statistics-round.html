@@ -49,7 +49,7 @@
     labels: ['Eagles', 'Birdies', 'Pars', 'Bogeys', 'Double Bogeys', 'Other'],
     datasets: [
       {
-        label: '2021 US Open Course Statistics',
+        label: 'Course Statistics by Round',
         data: csrRound1,
         backgroundColor: [
           'rgb(54, 162, 235)',
@@ -84,9 +84,8 @@
   var scrChart = new Chart(document.getElementById('scrChart'), csrConfig);
 
   function updateRoundChart(elem) {
-    console.log();
     if (elem.id === '0') {
-      console.log('HERE');
+      console.log(scrChart.csrConfig);
       var csrData = scrChart.csrConfig.data;
       csrData.datasets[0].data = csrRound1;
       scrChart.update();
