@@ -1,0 +1,138 @@
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<style>
+  .chart-actions {
+    margin: 16px 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .chart-button {
+    transition: background 0.25s, border-color 0.25s;
+    background: rgba(40, 44, 52, 0.05);
+    border: 1px solid transparent;
+    border-radius: 6px;
+    color: #3080d0;
+    text-decoration: none !important;
+    display: inline-block;
+    font-size: 0.8rem;
+    padding: 8px 16px;
+    margin: 0 8px 8px 0;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    font-weight: 500;
+  }
+</style>
+
+<div>
+  <canvas id="myChart"></canvas>
+  <div class="chart-actions">
+    <a id="0" class="chart-button" onclick="updateChart(this)">Round 1</a>
+    <a id="1" class="chart-button" onclick="updateChart(this)">Round 2</a>
+    <a id="2" class="chart-button" onclick="updateChart(this)">Round 3</a>
+    <a id="3" class="chart-button" onclick="updateChart(this)">Round 4</a>
+    <a id="4" class="chart-button" onclick="updateChart(this)">Overall</a>
+  </div>
+</div>
+
+<script>
+  const DATA_COUNT = 5;
+  const NUMBER_CFG = { count: DATA_COUNT, min: 0, max: 100 };
+
+  const round1 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7];
+  const round2 = [8, 376, 1678, 642, 77, 9];
+  const round3 = [4, 189, 812, 250, 22, 1];
+  const round4 = [2, 177, 797, 273, 26, 3];
+  const overall = [21, 1077, 5049, 1805, 184, 18];
+
+  const data = {
+    labels: ['Eagles', 'Birdies', 'Pars', 'Bogeys', 'Double Bogeys', 'Other'],
+    datasets: [
+      {
+        label: 'Eagles',
+        data: round1,
+        backgroundColor: 'rgb(54, 162, 235)',
+      },
+      {
+        label: 'Birdies',
+        data: round1,
+        backgroundColor: 'rgb(255, 99, 132)',
+      },
+      {
+        label: 'Pars',
+        data: round1,
+        backgroundColor: 'rgb(74, 192, 192)',
+      },
+      {
+        label: 'Bogeys',
+        data: round1,
+        backgroundColor: 'rgb(255, 205, 86)',
+      },
+      {
+        label: 'Double Bogeys',
+        data: round1,
+        backgroundColor: 'rgb(255, 158, 64)',
+      },
+      {
+        label: 'Other',
+        data: round1,
+        backgroundColor: 'rgb(204, 205, 209)',
+      },
+    ],
+  };
+
+  const config = {
+    type: 'bar',
+    data: data,
+    options: {
+      plugins: {
+        title: {
+          display: true,
+          text: 'Course Statistics by Hole',
+        },
+      },
+      responsive: true,
+      scales: {
+        x: {
+          stacked: true,
+        },
+        y: {
+          stacked: true,
+        },
+      },
+    },
+  };
+
+  var myChart = new Chart(document.getElementById('myChart'), config);
+
+  function updateChart(elem) {
+    if (elem.id === '0') {
+      var data = myChart.config.data;
+      data.datasets[0].data = round1;
+      myChart.update();
+    }
+    if (elem.id === '1') {
+      var data = myChart.config.data;
+      data.datasets[0].data = round2;
+      myChart.update();
+    }
+    if (elem.id === '2') {
+      var data = myChart.config.data;
+      data.datasets[0].data = round3;
+      myChart.update();
+    }
+    if (elem.id === '3') {
+      var data = myChart.config.data;
+      data.datasets[0].data = round4;
+      myChart.update();
+    }
+    if (elem.id === '4') {
+      var data = myChart.config.data;
+      data.datasets[0].data = overall;
+      myChart.update();
+    }
+  }
+</script>
