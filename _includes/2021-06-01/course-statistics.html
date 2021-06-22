@@ -30,11 +30,11 @@
 <div>
   <canvas id="myChart"></canvas>
   <div class="chart-actions">
-    <a id="0" class="chart-button" onclick="updateData(this)">Round 1</a>
-    <a id="1" class="chart-button" onclick="updateData(this)">Round 2</a>
-    <a id="2" class="chart-button" onclick="updateData(this)">Round 3</a>
-    <a id="3" class="chart-button" onclick="updateData(this)">Round 4</a>
-    <a id="4" class="chart-button" onclick="updateData(this)">Overall</a>
+    <a id="0" class="chart-button" onclick="updateChart(this)">Round 1</a>
+    <a id="1" class="chart-button" onclick="updateChart(this)">Round 2</a>
+    <a id="2" class="chart-button" onclick="updateChart(this)">Round 3</a>
+    <a id="3" class="chart-button" onclick="updateChart(this)">Round 4</a>
+    <a id="4" class="chart-button" onclick="updateChart(this)">Overall</a>
   </div>
 </div>
 
@@ -49,18 +49,18 @@
   const overall = [21, 1077, 5049, 1805, 184, 18];
 
   const data = {
-    labels: ["Eagles", "Birdies", "Pars", "Bogeys", "Double Bogeys", "Other"],
+    labels: ['Eagles', 'Birdies', 'Pars', 'Bogeys', 'Double Bogeys', 'Other'],
     datasets: [
       {
-        label: "2021 US Open Course Statistics",
+        label: '2021 US Open Course Statistics',
         data: round1,
         backgroundColor: [
-          "rgb(54, 162, 235)",
-          "rgb(255, 99, 132)",
-          "rgb(74, 192, 192)",
-          "rgb(255, 205, 86)",
-          "rgb(255, 158, 64)",
-          "rgb(204, 205, 209)",
+          'rgb(54, 162, 235)',
+          'rgb(255, 99, 132)',
+          'rgb(74, 192, 192)',
+          'rgb(255, 205, 86)',
+          'rgb(255, 158, 64)',
+          'rgb(204, 205, 209)',
         ],
         hoverOffset: 4,
       },
@@ -68,48 +68,44 @@
   };
 
   const config = {
-    type: "doughnut",
+    type: 'doughnut',
     data: data,
     options: {
       responsive: true,
       plugins: {
         legend: {
-          position: "left",
+          position: 'left',
         },
         title: {
           display: true,
-          text: "2021 US Open Course Statistics",
+          text: '2021 US Open Course Statistics',
         },
       },
     },
   };
 
-  var myChart = new Chart(document.getElementById("myChart"), config);
+  var myChart = new Chart(document.getElementById('myChart'), config);
 
-  function updateData(elem) {
+  function updateChart(elem) {
     switch (elem.id) {
-      case "0":
+      case '0':
         var data = myChart.config.data;
         data.datasets[0].data = round1;
-        try {
-          myChart.update();
-        } catch (e) {
-          console.log(e);
-        }
-
-      case "1":
+        myChart.update();
+      case '1':
         var data = myChart.config.data;
         data.datasets[0].data = round2;
         myChart.update();
-      case "2":
+      case '2':
         var data = myChart.config.data;
         data.datasets[0].data = round3;
         myChart.update();
-      case "3":
+      case '3':
         var data = myChart.config.data;
         data.datasets[0].data = round4;
         myChart.update();
-      case "4":
+        console.log('HERE');
+      case '4':
         var data = myChart.config.data;
         data.datasets[0].data = overall;
         myChart.update();
