@@ -64,9 +64,9 @@
     ],
   };
 
-  const config = {
+  const csrConfig = {
     type: 'doughnut',
-    data: data,
+    data: csrData,
     options: {
       responsive: true,
       plugins: {
@@ -81,31 +81,31 @@
     },
   };
 
-  var myChart = new Chart(document.getElementById('myChart'), config);
+  var myChart = new Chart(document.getElementById('myChart'), csrConfig);
 
   function updateChart(elem) {
     if (elem.id === '0') {
-      var csrData = myChart.config.data;
+      var csrData = myChart.csrConfig.data;
       csrData.datasets[0].data = csrRound1;
       myChart.update();
     }
     if (elem.id === '1') {
-      var csrData = myChart.config.data;
+      var csrData = myChart.csrConfig.data;
       csrData.datasets[0].data = csrRound2;
       myChart.update();
     }
     if (elem.id === '2') {
-      var csrData = myChart.config.data;
+      var csrData = myChart.csrConfig.data;
       csrData.datasets[0].data = csrRound3;
       myChart.update();
     }
     if (elem.id === '3') {
-      var csrData = myChart.config.data;
+      var csrData = myChart.csrConfig.data;
       csrData.datasets[0].data = csrRound4;
       myChart.update();
     }
     if (elem.id === '4') {
-      var csrData = myChart.config.data;
+      var csrData = myChart.csrConfig.data;
       csrData.datasets[0].data = csrOverall;
       myChart.update();
     }
