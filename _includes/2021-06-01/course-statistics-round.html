@@ -85,6 +85,7 @@
 
   function updateChart(elem) {
     if (elem.id === '0') {
+      console.log('HERE');
       var csrData = scrChart.csrConfig.data;
       csrData.datasets[0].data = csrRound1;
       scrChart.update();
