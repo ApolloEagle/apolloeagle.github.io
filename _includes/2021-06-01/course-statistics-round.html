@@ -45,7 +45,7 @@
   const csrRound4 = [2, 177, 797, 273, 26, 3];
   const csrOverall = [21, 1077, 5049, 1805, 184, 18];
 
-  const data = {
+  const csrData = {
     labels: ['Eagles', 'Birdies', 'Pars', 'Bogeys', 'Double Bogeys', 'Other'],
     datasets: [
       {
@@ -86,27 +86,27 @@
   function updateChart(elem) {
     if (elem.id === '0') {
       var csrData = myChart.config.data;
-      data.datasets[0].data = csrRound1;
+      csrData.datasets[0].data = csrRound1;
       myChart.update();
     }
     if (elem.id === '1') {
       var csrData = myChart.config.data;
-      data.datasets[0].data = csrRound2;
+      csrData.datasets[0].data = csrRound2;
       myChart.update();
     }
     if (elem.id === '2') {
       var csrData = myChart.config.data;
-      data.datasets[0].data = csrRound3;
+      csrData.datasets[0].data = csrRound3;
       myChart.update();
     }
     if (elem.id === '3') {
       var csrData = myChart.config.data;
-      data.datasets[0].data = csrRound4;
+      csrData.datasets[0].data = csrRound4;
       myChart.update();
     }
     if (elem.id === '4') {
       var csrData = myChart.config.data;
-      data.datasets[0].data = csrOverall;
+      csrData.datasets[0].data = csrOverall;
       myChart.update();
     }
   }
