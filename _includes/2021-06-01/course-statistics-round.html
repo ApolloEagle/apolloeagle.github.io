@@ -39,18 +39,18 @@
 </div>
 
 <script>
-  const round1 = [7, 335, 1762, 640, 59, 5];
-  const round2 = [8, 376, 1678, 642, 77, 9];
-  const round3 = [4, 189, 812, 250, 22, 1];
-  const round4 = [2, 177, 797, 273, 26, 3];
-  const overall = [21, 1077, 5049, 1805, 184, 18];
+  const csrRound1 = [7, 335, 1762, 640, 59, 5];
+  const csrRound2 = [8, 376, 1678, 642, 77, 9];
+  const csrRound3 = [4, 189, 812, 250, 22, 1];
+  const csrRound4 = [2, 177, 797, 273, 26, 3];
+  const csrOverall = [21, 1077, 5049, 1805, 184, 18];
 
   const data = {
     labels: ['Eagles', 'Birdies', 'Pars', 'Bogeys', 'Double Bogeys', 'Other'],
     datasets: [
       {
         label: '2021 US Open Course Statistics',
-        data: round1,
+        data: csrRound1,
         backgroundColor: [
           'rgb(54, 162, 235)',
           'rgb(255, 99, 132)',
@@ -86,27 +86,27 @@
   function updateChart(elem) {
     if (elem.id === '0') {
       var data = myChart.config.data;
-      data.datasets[0].data = round1;
+      data.datasets[0].data = csrRound1;
       myChart.update();
     }
     if (elem.id === '1') {
       var data = myChart.config.data;
-      data.datasets[0].data = round2;
+      data.datasets[0].data = csrRound2;
       myChart.update();
     }
     if (elem.id === '2') {
       var data = myChart.config.data;
-      data.datasets[0].data = round3;
+      data.datasets[0].data = csrRound3;
       myChart.update();
     }
     if (elem.id === '3') {
       var data = myChart.config.data;
-      data.datasets[0].data = round4;
+      data.datasets[0].data = csrRound4;
       myChart.update();
     }
     if (elem.id === '4') {
       var data = myChart.config.data;
-      data.datasets[0].data = overall;
+      data.datasets[0].data = csrOverall;
       myChart.update();
     }
   }
