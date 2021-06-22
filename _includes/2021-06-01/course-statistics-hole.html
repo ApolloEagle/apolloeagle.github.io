@@ -30,11 +30,11 @@
 <div>
   <canvas id="myChart"></canvas>
   <div class="chart-actions">
-    <a id="0" class="chart-button" onclick="updateChart(this)">Round 1</a>
-    <a id="1" class="chart-button" onclick="updateChart(this)">Round 2</a>
-    <a id="2" class="chart-button" onclick="updateChart(this)">Round 3</a>
-    <a id="3" class="chart-button" onclick="updateChart(this)">Round 4</a>
-    <a id="4" class="chart-button" onclick="updateChart(this)">Overall</a>
+    <a id="hole0" class="chart-button" onclick="updateChart(this)">Round 1</a>
+    <a id="hole1" class="chart-button" onclick="updateChart(this)">Round 2</a>
+    <a id="hole2" class="chart-button" onclick="updateChart(this)">Round 3</a>
+    <a id="hole3" class="chart-button" onclick="updateChart(this)">Round 4</a>
+    <a id="hole4" class="chart-button" onclick="updateChart(this)">Overall</a>
   </div>
 </div>
 
@@ -533,7 +533,7 @@
   var myChart = new Chart(document.getElementById('myChart'), config);
 
   function updateChart(elem) {
-    if (elem.id === '0') {
+    if (elem.id === 'hole0') {
       var data = myChart.config.data;
       data.datasets[0].data = round1Eagles;
       data.datasets[1].data = round1Birdies;
@@ -543,7 +543,7 @@
       data.datasets[5].data = round1Others;
       myChart.update();
     }
-    if (elem.id === '1') {
+    if (elem.id === 'hole1') {
       var data = myChart.config.data;
       data.datasets[0].data = round2Eagles;
       data.datasets[1].data = round2Birdies;
@@ -553,7 +553,7 @@
       data.datasets[5].data = round2Others;
       myChart.update();
     }
-    if (elem.id === '2') {
+    if (elem.id === 'hole2') {
       var data = myChart.config.data;
       data.datasets[0].data = round3Eagles;
       data.datasets[1].data = round3Birdies;
@@ -563,7 +563,7 @@
       data.datasets[5].data = round3Others;
       myChart.update();
     }
-    if (elem.id === '3') {
+    if (elem.id === 'hole3') {
       var data = myChart.config.data;
       data.datasets[0].data = round4Eagles;
       data.datasets[1].data = round4Birdies;
@@ -573,7 +573,7 @@
       data.datasets[5].data = round4Others;
       myChart.update();
     }
-    if (elem.id === '4') {
+    if (elem.id === 'hole4') {
       var data = myChart.config.data;
       data.datasets[0].data = overallEagles;
       data.datasets[1].data = overallBirdies;
