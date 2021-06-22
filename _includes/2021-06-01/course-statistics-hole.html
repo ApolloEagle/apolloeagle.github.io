@@ -60,9 +60,9 @@
     '18',
   ];
   const round1Eagles = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7];
-  const round2Eagles;
-  const round3Eagles;
-  const round4Eagles;
+  const round2Eagles = [];
+  const round3Eagles = [];
+  const round4Eagles = [];
   const round1Birdies = [
     17,
     28,
@@ -83,9 +83,9 @@
     11,
     59,
   ];
-  const round2Birdies;
-  const round3Birdies;
-  const round4Birdies;
+  const round2Birdies = [];
+  const round3Birdies = [];
+  const round4Birdies = [];
   const round1Pars = [
     94,
     101,
@@ -106,9 +106,9 @@
     104,
     73,
   ];
-  const round2Pars;
-  const round3Pars;
-  const round4Pars;
+  const round2Pars = [];
+  const round3Pars = [];
+  const round4Pars = [];
   const round1Bogeys = [
     40,
     26,
@@ -129,9 +129,9 @@
     37,
     17,
   ];
-  const round2Bogeys;
-  const round3Bogeys;
-  const round4Bogeys;
+  const round2Bogeys = [];
+  const round3Bogeys = [];
+  const round4Bogeys = [];
   const round1DoubleBogeys = [
     5,
     1,
@@ -152,13 +152,13 @@
     4,
     0,
   ];
-  const round2DoubleBogeys;
-  const round3DoubleBogeys;
-  const round4DoubleBogeys;
+  const round2DoubleBogeys = [];
+  const round3DoubleBogeys = [];
+  const round4DoubleBogeys = [];
   const round1Others = [0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0];
-  const round2Others;
-  const round3Others;
-  const round4Others;
+  const round2Others = [];
+  const round3Others = [];
+  const round4Others = [];
 
   const data = {
     labels: holes,
@@ -168,31 +168,31 @@
         data: round1Eagles,
         backgroundColor: 'rgb(54, 162, 235)',
       },
-      //   {
-      //     label: 'Birdies',
-      //     data: round1Birdies,
-      //     backgroundColor: 'rgb(255, 99, 132)',
-      //   },
-      //   {
-      //     label: 'Pars',
-      //     data: round1Pars,
-      //     backgroundColor: 'rgb(74, 192, 192)',
-      //   },
-      //   {
-      //     label: 'Bogeys',
-      //     data: round1Bogeys,
-      //     backgroundColor: 'rgb(255, 205, 86)',
-      //   },
-      //   {
-      //     label: 'Double Bogeys',
-      //     data: round1DoubleBogeys,
-      //     backgroundColor: 'rgb(255, 158, 64)',
-      //   },
-      //   {
-      //     label: 'Other',
-      //     data: round1Others,
-      //     backgroundColor: 'rgb(204, 205, 209)',
-      //   },
+      {
+        label: 'Birdies',
+        data: round1Birdies,
+        backgroundColor: 'rgb(255, 99, 132)',
+      },
+      {
+        label: 'Pars',
+        data: round1Pars,
+        backgroundColor: 'rgb(74, 192, 192)',
+      },
+      {
+        label: 'Bogeys',
+        data: round1Bogeys,
+        backgroundColor: 'rgb(255, 205, 86)',
+      },
+      {
+        label: 'Double Bogeys',
+        data: round1DoubleBogeys,
+        backgroundColor: 'rgb(255, 158, 64)',
+      },
+      {
+        label: 'Other',
+        data: round1Others,
+        backgroundColor: 'rgb(204, 205, 209)',
+      },
     ],
   };
 
