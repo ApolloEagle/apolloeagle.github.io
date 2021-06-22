@@ -39,8 +39,6 @@
 </div>
 
 <script>
-  const round1 = [1, 2, 3];
-
   const data = {
     labels: [
       '1',
@@ -65,32 +63,51 @@
     datasets: [
       {
         label: 'Eagles',
-        data: round1,
+        data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 7],
         backgroundColor: 'rgb(54, 162, 235)',
       },
       {
         label: 'Birdies',
-        data: round1,
+        data: [
+          17,
+          28,
+          13,
+          10,
+          10,
+          29,
+          13,
+          16,
+          20,
+          16,
+          5,
+          10,
+          27,
+          27,
+          9,
+          15,
+          11,
+          59,
+        ],
         backgroundColor: 'rgb(255, 99, 132)',
       },
       {
         label: 'Pars',
-        data: round1,
+        data: [],
         backgroundColor: 'rgb(74, 192, 192)',
       },
       {
         label: 'Bogeys',
-        data: round1,
+        data: [],
         backgroundColor: 'rgb(255, 205, 86)',
       },
       {
         label: 'Double Bogeys',
-        data: round1,
+        data: [],
         backgroundColor: 'rgb(255, 158, 64)',
       },
       {
         label: 'Other',
-        data: round1,
+        data: [],
         backgroundColor: 'rgb(204, 205, 209)',
       },
     ],
