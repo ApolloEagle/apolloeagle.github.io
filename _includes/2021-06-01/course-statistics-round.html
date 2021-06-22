@@ -28,7 +28,7 @@
 </style>
 
 <div>
-  <canvas id="myChart"></canvas>
+  <canvas id="scrChart"></canvas>
   <div class="chart-actions">
     <a id="0" class="chart-button" onclick="updateChart(this)">Round 1</a>
     <a id="1" class="chart-button" onclick="updateChart(this)">Round 2</a>
@@ -81,33 +81,33 @@
     },
   };
 
-  var myChart = new Chart(document.getElementById('myChart'), csrConfig);
+  var scrChart = new Chart(document.getElementById('scrChart'), csrConfig);
 
   function updateChart(elem) {
     if (elem.id === '0') {
-      var csrData = myChart.csrConfig.data;
+      var csrData = scrChart.csrConfig.data;
       csrData.datasets[0].data = csrRound1;
-      myChart.update();
+      scrChart.update();
     }
     if (elem.id === '1') {
-      var csrData = myChart.csrConfig.data;
+      var csrData = scrChart.csrConfig.data;
       csrData.datasets[0].data = csrRound2;
-      myChart.update();
+      scrChart.update();
     }
     if (elem.id === '2') {
-      var csrData = myChart.csrConfig.data;
+      var csrData = scrChart.csrConfig.data;
       csrData.datasets[0].data = csrRound3;
-      myChart.update();
+      scrChart.update();
     }
     if (elem.id === '3') {
-      var csrData = myChart.csrConfig.data;
+      var csrData = scrChart.csrConfig.data;
       csrData.datasets[0].data = csrRound4;
-      myChart.update();
+      scrChart.update();
     }
     if (elem.id === '4') {
-      var csrData = myChart.csrConfig.data;
+      var csrData = scrChart.csrConfig.data;
       csrData.datasets[0].data = csrOverall;
-      myChart.update();
+      scrChart.update();
     }
   }
 </script>
