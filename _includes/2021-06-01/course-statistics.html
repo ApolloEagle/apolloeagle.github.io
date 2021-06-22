@@ -87,33 +87,30 @@
   var myChart = new Chart(document.getElementById('myChart'), config);
 
   function updateChart(elem) {
-    switch (elem.id) {
-      case '0':
-        var data = myChart.config.data;
-        data.datasets[0].data = round1;
-        myChart.update();
-      case '1':
-        var data = myChart.config.data;
-        data.datasets[0].data = round2;
-        myChart.update();
-      case '2':
-        var data = myChart.config.data;
-        data.datasets[0].data = round3;
-        myChart.update();
-      case '3':
-        console.log(elem.id);
-        console.log('HERE');
-        var data = myChart.config.data;
-        data.datasets[0].data = round4;
-        myChart.update();
-      case '4':
-        var data = myChart.config.data;
-        data.datasets[0].data = overall;
-        myChart.update();
-      default:
-        var data = myChart.config.data;
-        data.datasets[0].data = round1;
-        myChart.update();
+    if (elem.id === '0') {
+      var data = myChart.config.data;
+      data.datasets[0].data = round1;
+      myChart.update();
+    }
+    if (elem.id === '1') {
+      var data = myChart.config.data;
+      data.datasets[0].data = round2;
+      myChart.update();
+    }
+    if (elem.id === '2') {
+      var data = myChart.config.data;
+      data.datasets[0].data = round3;
+      myChart.update();
+    }
+    if (elem.id === '3') {
+      var data = myChart.config.data;
+      data.datasets[0].data = round4;
+      myChart.update();
+    }
+    if (elem.id === '4') {
+      var data = myChart.config.data;
+      data.datasets[0].data = overall;
+      myChart.update();
     }
   }
 </script>
