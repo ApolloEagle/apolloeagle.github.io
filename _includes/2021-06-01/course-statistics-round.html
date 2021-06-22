@@ -86,27 +86,27 @@
   function updateRoundChart(elem) {
     if (elem.id === '0') {
       console.log(scrChart);
-      var csrData = scrChart.csrConfig.data;
+      var csrData = scrChart.config.data;
       csrData.datasets[0].data = csrRound1;
       scrChart.update();
     }
     if (elem.id === '1') {
-      var csrData = scrChart.csrConfig.data;
+      var csrData = scrChart.config.data;
       csrData.datasets[0].data = csrRound2;
       scrChart.update();
     }
     if (elem.id === '2') {
-      var csrData = scrChart.csrConfig.data;
+      var csrData = scrChart.config.data;
       csrData.datasets[0].data = csrRound3;
       scrChart.update();
     }
     if (elem.id === '3') {
-      var csrData = scrChart.csrConfig.data;
+      var csrData = scrChart.config.data;
       csrData.datasets[0].data = csrRound4;
       scrChart.update();
     }
     if (elem.id === '4') {
-      var csrData = scrChart.csrConfig.data;
+      var csrData = scrChart.config.data;
       csrData.datasets[0].data = csrOverall;
       scrChart.update();
     }
