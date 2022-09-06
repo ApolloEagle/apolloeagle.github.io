@@ -2,14 +2,11 @@
 # This file contains configuration flags to customize your site
 #
 
-# Name of your site (displayed in the header)
-name: Formis
-
 # Short bio or description (displayed in the header)
 description:
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/apolloeagle/jekyll-now/master/images/icon.svg
+avatar: https://raw.githubusercontent.com/apolloeagle/jekyll-now/master/images/label.png
 
 #
 # Flags below are optional

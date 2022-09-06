@@ -6,7 +6,7 @@ permalink: /about/
 
 <div>
     <p>
-    If you have a question, please fill out the appropriate fields below and I will contact you as soon as possible.
+    If you have a question, please fill out the appropriate fields below and we will contact you as soon as possible.
     </p>
     <form action="https://formspree.io/f/xnqrjjok" method="POST" class="contact-form">
         <label>First Name</label>
