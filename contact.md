@@ -14,7 +14,7 @@ permalink: /contact/
         <label>Last Name</label>
         <input type="text" name="last-name" />
         <label>Email</label>
-        <input type="text" name="email" required/>
+        <input type="email" name="email" required/>
         <label>Subject</label>
         <input type="text" name="subject" required/>
         <label>Message</label>

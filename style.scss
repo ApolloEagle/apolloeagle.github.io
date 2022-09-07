@@ -13,6 +13,13 @@
 /* BASE RULES */
 /**************/
 
+@media (max-width: 576px) {
+  .contact-form {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 html {
   font-size: 100%;
 }
