@@ -7,18 +7,6 @@
 
 @import "reset";
 @import "variables";
-// Syntax highlighting @import is at the bottom of this file
-
-/**************/
-/* BASE RULES */
-/**************/
-
-@media (max-width: 576px) {
-  .contact-form {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
 
 html {
   font-size: 100%;
@@ -110,6 +98,10 @@ input {
 .contact-form {
   padding-left: 25%;
   padding-right: 25%;
+
+  @include mobile {
+    padding: 0px
+  }
 }
 
 button {
@@ -159,6 +151,27 @@ b {
 
 img {
   max-width: 100%;
+}
+
+#phone {
+  max-height: 90vh;
+  padding-top: 4vh;
+
+  @include mobile {
+    max-height: 65vh;
+    padding-top: 3vh;
+  }
+}
+
+#app-button {
+  max-height: 10vh;
+  padding-left: 5vh;
+
+  @include mobile {
+    max-height: 10vh;
+    padding-top: 3vh;
+    padding-left: 0px;
+  }
 }
 
 // Fixes images in popup boxes from Google Translate
@@ -293,6 +306,17 @@ nav {
   padding-bottom: 1em;
   border-bottom: none;
   padding: 10px 10px 10px 0px;
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mobile {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .post {
